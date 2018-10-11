@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Clase4Ejercicio2" 
+    xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+    
+    x:Class="Clase4Ejercicio2.MainPage">
+    <StackLayout>
+        <local:MagentaButton  />
+        <local:MyBlueLabel />
+        
+    <cv:CarouselView x:Name="cvCarousel">
+        <cv:CarouselView.ItemTemplate>
+           <DataTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="60"/>
+                </Grid.RowDefinitions>
+                <ContentView BackgroundColor="Black" Grid.Row="0">
+                    <Image
+                        Source="{Binding ImageUrl}"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        Aspect="Fill" />
+                </ContentView>
+                <ContentView BackgroundColor="Transparent" Grid.Row="1">
+                    <Label Text="This is a test" />
+                </ContentView>
+            </Grid>
+            </DataTemplate>
+        </cv:CarouselView.ItemTemplate>
+    </cv:CarouselView>
+    </StackLayout>
+</ContentPage>

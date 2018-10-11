@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Clase4Ejercicio1" x:Class="Clase4Ejercicio1.MainPage">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="tbxAddress" Placeholder="Address bar" HorizontalOptions="FillAndExpand" />
+            <Button Text="Go!" Clicked="Handle_Clicked"/>
+        </StackLayout>
+        <WebView 
+                 x:Name="webBrowser"
+                 Source="https://google.com" 
+                 HorizontalOptions="FillAndExpand" 
+                 VerticalOptions="FillAndExpand"></WebView>
+    </StackLayout>
+</ContentPage>

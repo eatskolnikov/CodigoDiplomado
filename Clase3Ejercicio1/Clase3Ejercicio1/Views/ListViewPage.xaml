@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Clase3Ejercicio1.Views.ListViewPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <SearchBar  TextChanged="Handle_TextChanged"/>
+            <ListView x:Name="lstShopping" HasUnevenRows="true" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <!--<TextCell Text="{Binding Title}" Detail="{Binding AllInfo}" ></TextCell>-->
+                        <!--<ImageCell ImageSource="{Binding ImageUrl}" Text="{Binding Title}" Detail="{Binding AllInfo}" />-->
+                        <ViewCell>
+                            <StackLayout>
+                                <Image Source="{Binding ImageUrl}" HorizontalOptions="Center" WidthRequest="200" />
+                                <Label Text="{Binding Title}" FontSize="Large" FontAttributes="Bold" HorizontalOptions="Center"/>
+                                <Label Text="{Binding AllInfo}" FontSize="Large" />
+
+                            </StackLayout>
+                        </ViewCell>
+                        
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

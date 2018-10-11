@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Clase2Ejercicio2.Views.ProfilePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="http://pm1.narvii.com/6456/f41f689796c8f037e24277c285864fc53d89301d_00.jpg" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Bio es un bar en la zona!" HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

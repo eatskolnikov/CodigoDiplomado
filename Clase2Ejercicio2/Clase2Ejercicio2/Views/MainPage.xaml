@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Clase2Ejercicio2.Views.MainPage">
+    <StackLayout>
+    
+        <Entry x:Name="tbxUsername" Placeholder="Nombre de usuario" HorizontalOptions="FillAndExpand"/>
+        <Entry x:Name="tbxPassword" Placeholder="Contraseña" HorizontalOptions="FillAndExpand" IsPassword="true"/>
+        <Button x:Name="btnLogin" Text="Iniciar Sesión" HorizontalOptions="FillAndExpand" Clicked="Handle_Clicked"/>
+    </StackLayout>
+</ContentPage>

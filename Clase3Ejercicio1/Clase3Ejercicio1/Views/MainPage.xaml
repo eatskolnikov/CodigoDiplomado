@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Clase3Ejercicio1" 
+    x:Class="Clase3Ejercicio1.Views.MainPage">
+    <StackLayout>
+        <Button Text="Vista de datos con StackLayout" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Clicked="Handle_Clicked"/>
+        <Button Text="Ejemplo de Grid" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Clicked="Handle_Clicked_1" />
+        <Button Text="Vista de datos con Grid" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Clicked="Handle_Clicked_2" />
+        <Button Text="Vista de datos con Listview" VerticalOptions="Center" HorizontalOptions="FillAndExpand" Clicked="Handle_Clicked_3" />
+    </StackLayout>
+</ContentPage>

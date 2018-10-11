@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Clase3Ejercicio1.Views.GridPageExample">
+    <ContentPage.Content>
+    <Grid x:Name="gridDataView" BackgroundColor="Fuchsia">
+        <Grid.ColumnDefinitions>
+           <ColumnDefinition Width="*"></ColumnDefinition>
+           <ColumnDefinition Width="*"></ColumnDefinition>
+           <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+            
+        <StackLayout
+            Grid.Row="0"
+            Grid.Column="0"
+            BackgroundColor="Green"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"></StackLayout> 
+            
+        <StackLayout
+            Grid.Row="2"
+            Grid.Column="2"
+            BackgroundColor="Red"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"></StackLayout> 
+            
+            
+        <StackLayout
+            Grid.Row="0"
+            Grid.Column="2"
+            BackgroundColor="Blue"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"></StackLayout> 
+        <StackLayout
+            Grid.Row="2"
+            Grid.Column="0"
+            BackgroundColor="Yellow"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"></StackLayout> 
+        <Image
+            Grid.Row="1"
+            Grid.RowSpan="2"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Aspect="AspectFit"
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            Source="http://as01.epimg.net/deporteyvida/imagenes/2017/07/23/portada/1500819395_065005_1500819504_noticia_normal.jpg"/>
+    </Grid>
+    </ContentPage.Content>
+</ContentPage>
