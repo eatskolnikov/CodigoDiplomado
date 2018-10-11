@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Clase1Ejercicio1"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+    ios:Page.UseSafeArea="true"
+    x:Class="Clase1Ejercicio1.MainPage">
+    <StackLayout x:Name="MyStackLayout">
+        <StackLayout VerticalOptions="CenterAndExpand" Orientation="Vertical">
+            
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nombre" WidthRequest="100" BackgroundColor="Fuchsia" VerticalTextAlignment="Center" HorizontalTextAlignment="End"/>
+                <Entry Placeholder="Ej. Juan Perez" x:Name="txtName" WidthRequest="150" BackgroundColor="Green"/>
+            </StackLayout>
+            
+            <Label Text="Fh. de Nacimiento" WidthRequest="200"/>
+            <DatePicker x:Name="dtpBirthDay" WidthRequest="249" />
+            
+            <Button Text="Enviar" Clicked="Handle_Clicked" WidthRequest="190"/>
+            
+            <Label Text="" x:Name="lblAge" WidthRequest="100"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
