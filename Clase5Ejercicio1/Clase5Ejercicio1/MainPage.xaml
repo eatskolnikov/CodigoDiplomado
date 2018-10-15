@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Clase5Ejercicio1" x:Class="Clase5Ejercicio1.MainPage">
+    <Grid Padding="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image Source="{Binding current.condition.IconUrl}" HeightRequest="150" Grid.Row="0" Grid.Column="0" />
+        
+        <StackLayout Grid.Row="0" Grid.Column="1">
+            <Label Text="{Binding current.CelciusText}" FontAttributes="Bold" FontSize="Large"  />
+            <Label Text="{Binding current.FahrenheitText}" FontSize="Large" />
+        </StackLayout>
+        <Label Text="{Binding current.condition.text}" FontSize="Large" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
+        <Label Text="{Binding location.name}" FontSize="Large" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" />
+        <Label Text="{Binding location.region}" FontSize="Large" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" />
+        <Label Text="{Binding location.country}" FontSize="Large" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+    </Grid>
+</ContentPage>
